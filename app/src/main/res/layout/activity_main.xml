@@ -12,7 +12,7 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_height="320dp"
         android:id="@+id/relativeLayout"
         android:visibility="visible"
         android:layout_alignParentTop="true"
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/arms"
             android:visibility="invisible"
-            android:id="@+id/image_arms" />
+            android:id="@+id/arms_image" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ears"
             android:visibility="invisible"
-            android:id="@+id/image_ears" />
+            android:id="@+id/ears_image" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -102,7 +102,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
 
         <TableRow
             android:layout_width="match_parent"
