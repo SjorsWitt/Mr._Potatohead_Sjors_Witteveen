@@ -26,76 +26,87 @@
             android:layout_height="wrap_content"
             android:src="@drawable/arms"
             android:visibility="invisible"
-            android:id="@+id/arms_image" />
+            android:id="@+id/arms_image"
+            android:contentDescription="@string/arms_desc"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/body"
-            android:visibility="visible" />
+            android:visibility="visible"
+            android:contentDescription="@string/body_desc"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ears"
             android:visibility="invisible"
-            android:id="@+id/ears_image" />
+            android:id="@+id/ears_image"
+            android:contentDescription="@string/ears_desc"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/eyebrows"
             android:visibility="invisible"
-            android:id="@+id/eyebrows_image" />
+            android:id="@+id/eyebrows_image"
+            android:contentDescription="@string/eyebrows_desc"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/eyes"
             android:visibility="invisible"
-            android:id="@+id/eyes_image" />
+            android:id="@+id/eyes_image"
+            android:contentDescription="@string/eyes_desc"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/glasses"
             android:id="@+id/glasses_image"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            android:contentDescription="@string/glasses_desc"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/hat"
             android:visibility="invisible"
-            android:id="@+id/hat_image" />
+            android:id="@+id/hat_image"
+            android:contentDescription="@string/hat_desc"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/mouth"
             android:visibility="invisible"
-            android:id="@+id/mouth_image" />
+            android:id="@+id/mouth_image"
+            android:contentDescription="@string/mouth_desc"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/mustache"
             android:visibility="invisible"
-            android:id="@+id/mustache_image" />
+            android:id="@+id/mustache_image"
+            android:contentDescription="@string/mustache_desc"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/nose"
             android:visibility="invisible"
-            android:id="@+id/nose_image" />
+            android:id="@+id/nose_image"
+            android:contentDescription="@string/nose_desc"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/shoes"
             android:visibility="invisible"
-            android:id="@+id/shoes_image" />
+            android:id="@+id/shoes_image"
+            android:contentDescription="@string/shoes_desc"/>
 
     </RelativeLayout>
 
