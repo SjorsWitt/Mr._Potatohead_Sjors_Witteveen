@@ -9,7 +9,8 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     static final int NUMBER_OF_COMPONENTS = 10;
-    
+
+    // component index in arrays
     static final int ARMS = 0;
     static final int EARS = 1;
     static final int EYEBROWS = 2;
@@ -21,10 +22,11 @@ public class MainActivity extends AppCompatActivity {
     static final int NOSE = 8;
     static final int SHOES = 9;
 
+    // used for Bundle saved instance state
     private String[] visibility_array = {"arms_visibility", "ears_visibility",
             "eyebrows_visibility", "eyes_visibility", "glasses_visibility", "hat_visibility",
             "mouth_visibility", "mustache_visibility", "nose_visibility", "shoes_visibility"};
-
+    
     private CheckBox[] checkbox_array = new CheckBox[NUMBER_OF_COMPONENTS];
     private ImageView[] image_array = new ImageView[NUMBER_OF_COMPONENTS];
 
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         checkbox_array[NOSE] = (CheckBox) findViewById(R.id.nose_checkbox);
         checkbox_array[SHOES] = (CheckBox) findViewById(R.id.shoes_checkbox);
 
-        image_array[0] = (ImageView) findViewById(R.id.arms_image);
+        image_array[ARMS] = (ImageView) findViewById(R.id.arms_image);
         image_array[EARS] = (ImageView) findViewById(R.id.ears_image);
         image_array[EYEBROWS] = (ImageView) findViewById(R.id.eyebrows_image);
         image_array[EYES] = (ImageView) findViewById(R.id.eyes_image);
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         image_array[NOSE] = (ImageView) findViewById(R.id.nose_image);
         image_array[SHOES] = (ImageView) findViewById(R.id.shoes_image);
 
+        // resetting image visibility from previous layout
         if (savedInstanceState != null) {
             for (int i = 0; i < NUMBER_OF_COMPONENTS; i++) {
                 if (savedInstanceState.getInt(visibility_array[i]) == View.VISIBLE) {
@@ -69,11 +72,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState (Bundle outState) {
         super.onSaveInstanceState(outState);
+
+        // remembering image visibility from previous layout
         for (int i = 0; i < NUMBER_OF_COMPONENTS; i ++) {
             outState.putInt(visibility_array[i], image_array[i].getVisibility());
         }
     }
 
+    // change visibility when box is (un)checked
     public void armsCheckBoxIsClicked(View view) {
         changeVisibility(view, checkbox_array[ARMS], image_array[ARMS]);
     }
@@ -114,9 +120,14 @@ public class MainActivity extends AppCompatActivity {
         changeVisibility(view, checkbox_array[SHOES], image_array[SHOES]);
     }
 
+    // change image visibility
     private void changeVisibility(View view, CheckBox checkbox, ImageView image) {
+
+        // make visibile when checked
         if (checkbox.isChecked()) {
             image.setVisibility(View.VISIBLE);
+
+        // make invisible when unchecked
         } else {
             image.setVisibility(View.INVISIBLE);
         }
