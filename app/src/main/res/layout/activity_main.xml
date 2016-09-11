@@ -111,7 +111,7 @@
             android:layout_height="match_parent" >
 
             <CheckBox
-                android:text="Arms"
+                android:text="@string/arms_checkbox"
                 android:id="@+id/arms_checkbox"
                 android:onClick="armsCheckBoxIsClicked"
                 android:layout_column="0"
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content" />
 
             <CheckBox
-                android:text="Hat"
+                android:text="@string/hat_checkbox"
                 android:id="@+id/hat_checkbox"
                 android:onClick="hatCheckBoxIsClicked"
                 android:layout_width="wrap_content"
@@ -134,7 +134,7 @@
             android:layout_height="match_parent" >
 
             <CheckBox
-                android:text="Ears"
+                android:text="@string/ears_checkbox"
                 android:id="@+id/ears_checkbox"
                 android:onClick="earsCheckBoxIsClicked"
                 android:layout_column="0"
@@ -143,7 +143,7 @@
                 android:layout_height="wrap_content" />
 
             <CheckBox
-                android:text="Mouth"
+                android:text="@string/mouth_checkbox"
                 android:id="@+id/mouth_checkbox"
                 android:onClick="mouthCheckBoxIsClicked"
                 android:layout_width="wrap_content"
@@ -157,7 +157,7 @@
             android:layout_height="match_parent" >
 
             <CheckBox
-                android:text="Eyebrows"
+                android:text="@string/eyebrows_checkbox"
                 android:id="@+id/eyebrows_checkbox"
                 android:onClick="eyebrowsCheckBoxIsClicked"
                 android:layout_column="0"
@@ -166,7 +166,7 @@
                 android:layout_height="wrap_content" />
 
             <CheckBox
-                android:text="Mustache"
+                android:text="@string/mustache_checkbox"
                 android:id="@+id/mustache_checkbox"
                 android:onClick="mustacheCheckBoxIsClicked"
                 android:layout_width="wrap_content"
@@ -180,7 +180,7 @@
             android:layout_height="match_parent" >
 
             <CheckBox
-                android:text="Eyes"
+                android:text="@string/eyes_checkbox"
                 android:id="@+id/eyes_checkbox"
                 android:onClick="eyesCheckBoxIsClicked"
                 android:layout_column="0"
@@ -189,7 +189,7 @@
                 android:layout_height="wrap_content" />
 
             <CheckBox
-                android:text="Nose"
+                android:text="@string/nose_checkbox"
                 android:id="@+id/nose_checkbox"
                 android:onClick="noseCheckBoxIsClicked"
                 android:layout_width="wrap_content"
@@ -203,7 +203,7 @@
             android:layout_height="match_parent" >
 
             <CheckBox
-                android:text="Glasses"
+                android:text="@string/glasses_checkbox"
                 android:id="@+id/glasses_checkbox"
                 android:onClick="glassesCheckBoxIsClicked"
                 android:layout_width="wrap_content"
@@ -212,7 +212,7 @@
                 android:layout_weight="1" />
 
             <CheckBox
-                android:text="Shoes"
+                android:text="@string/shoes_checkbox"
                 android:id="@+id/shoes_checkbox"
                 android:onClick="shoesCheckBoxIsClicked"
                 android:layout_width="wrap_content"

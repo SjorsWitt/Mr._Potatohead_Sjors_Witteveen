@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Mr. Potatohead</string>
+    <string name="arms_checkbox">Arms</string>
+    <string name="ears_checkbox">Ears</string>
+    <string name="eyebrows_checkbox">Eyebrows</string>
+    <string name="eyes_checkbox">Eyes</string>
+    <string name="glasses_checkbox">Glasses</string>
+    <string name="hat_checkbox">Hat</string>
+    <string name="mouth_checkbox">Mouth</string>
+    <string name="mustache_checkbox">Mustache</string>
+    <string name="nose_checkbox">Nose</string>
+    <string name="shoes_checkbox">Shoes</string>
 </resources>
